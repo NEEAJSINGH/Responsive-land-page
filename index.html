@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A responsive landing page built with semantic HTML, modern CSS, and vanilla JavaScript.">
+    <title>Nova — Build Better Digital Experiences</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ==================== HEADER ==================== -->
+    <header class="site-header">
+        <div class="container nav-wrapper">
+            <a href="#home" class="logo" aria-label="Nova home">
+                <span class="logo-mark">N</span>
+                <span>Nova</span>
+            </a>
+
+            <!-- Desktop navigation + mobile toggle -->
+            <button class="menu-toggle"
+                    type="button"
+                    aria-label="Open navigation menu"
+                    aria-expanded="false"
+                    aria-controls="primary-navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="main-nav" id="primary-navigation" aria-label="Primary navigation">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#features" class="nav-link">Features</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                <a href="#contact" class="nav-cta">Get Started</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- ==================== HERO ==================== -->
+        <section class="hero" id="home">
+            <div class="container hero-grid">
+                <div class="hero-content">
+                    <span class="eyebrow">SMARTER • SIMPLER • FASTER</span>
+                    <h1>Turn your ideas into <span>digital experiences.</span></h1>
+                    <p class="hero-text">
+                        Nova is a modern workspace for planning, creating, and launching
+                        better digital products without unnecessary complexity.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a href="#contact" class="button button-primary">Start Building</a>
+                        <a href="#features" class="button button-secondary">Explore Features <span>↓</span></a>
+                    </div>
+
+                    <div class="hero-proof">
+                        <div class="avatar-stack" aria-label="Example customer avatars">
+                            <span>AK</span>
+                            <span>RM</span>
+                            <span>JS</span>
+                            <span>+</span>
+                        </div>
+                        <div>
+                            <strong>Built for modern teams</strong>
+                            <small>Simple tools. Better results.</small>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CSS-built dashboard preview keeps the project dependency-free -->
+                <div class="hero-visual" aria-label="Dashboard preview">
+                    <div class="dashboard-window">
+                        <div class="window-bar">
+                            <div class="window-dots">
+                                <i></i><i></i><i></i>
+                            </div>
+                            <span>nova / overview</span>
+                            <span class="live-status">● Live</span>
+                        </div>
+
+                        <div class="dashboard-body">
+                            <aside class="mini-sidebar">
+                                <div class="mini-logo">N</div>
+                                <span class="side-item selected"></span>
+                                <span class="side-item"></span>
+                                <span class="side-item"></span>
+                                <span class="side-item"></span>
+                                <span class="side-item"></span>
+                            </aside>
+
+                            <div class="mini-main">
+                                <div class="mini-heading">
+                                    <div>
+                                        <small>Monday, September 28</small>
+                                        <h3>Good morning, Alex.</h3>
+                                    </div>
+                                    <span class="notification">3</span>
+                                </div>
+
+                                <div class="stat-grid">
+                                    <div class="stat-card">
+                                        <small>Projects</small>
+                                        <strong>24</strong>
+                                        <span class="positive">↑ 18%</span>
+                                    </div>
+                                    <div class="stat-card">
+                                        <small>Completed</small>
+                                        <strong>86%</strong>
+                                        <span class="positive">↑ 9%</span>
+                                    </div>
+                                </div>
+
+                                <div class="chart-card">
+                                    <div class="chart-title">
+                                        <strong>Weekly progress</strong>
+                                        <small>Last 7 days</small>
+                                    </div>
+                                    <div class="chart">
+                                        <span style="height: 34%"></span>
+                                        <span style="height: 48%"></span>
+                                        <span style="height: 42%"></span>
+                                        <span style="height: 65%"></span>
+                                        <span style="height: 57%"></span>
+                                        <span style="height: 79%"></span>
+                                        <span style="height: 91%"></span>
+                                    </div>
+                                    <div class="chart-labels">
+                                        <small>M</small><small>T</small><small>W</small>
+                                        <small>T</small><small>F</small><small>S</small><small>S</small>
+                                    </div>
+                                </div>
+
+                                <div class="task-row">
+                                    <span class="check">✓</span>
+                                    <div>
+                                        <strong>Landing page design</strong>
+                                        <small>Completed today</small>
+                                    </div>
+                                    <b>100%</b>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="floating-card floating-one">
+                        <span class="float-icon">✓</span>
+                        <div><strong>Task completed</strong><small>Just now</small></div>
+                    </div>
+
+                    <div class="floating-card floating-two">
+                        <strong>+24%</strong>
+                        <small>Productivity</small>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== FEATURES ==================== -->
+        <section class="features-section" id="features">
+            <div class="container">
+                <div class="section-heading">
+                    <span class="eyebrow">WHY NOVA</span>
+                    <h2>Everything you need to move forward.</h2>
+                    <p>Thoughtful features designed around the way modern teams actually work.</p>
+                </div>
+
+                <div class="features-grid">
+                    <article class="feature-card">
+                        <div class="feature-icon">✦</div>
+                        <h3>Clean workflow</h3>
+                        <p>Keep projects organized with a simple interface that makes priorities easy to understand.</p>
+                        <a href="#contact">Learn more →</a>
+                    </article>
+
+                    <article class="feature-card featured-card">
+                        <div class="feature-icon">↗</div>
+                        <h3>Track progress</h3>
+                        <p>See your work at a glance with practical dashboards, useful metrics, and clear project signals.</p>
+                        <a href="#contact">Learn more →</a>
+                    </article>
+
+                    <article class="feature-card">
+                        <div class="feature-icon">◎</div>
+                        <h3>Stay connected</h3>
+                        <p>Bring conversations, tasks, and updates together so your team always knows what happens next.</p>
+                        <a href="#contact">Learn more →</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== ABOUT ==================== -->
+        <section class="about-section" id="about">
+            <div class="container about-grid">
+                <div class="about-visual">
+                    <div class="orbit orbit-one"></div>
+                    <div class="orbit orbit-two"></div>
+                    <div class="about-core">
+                        <span>N</span>
+                    </div>
+                    <span class="orbit-dot dot-one"></span>
+                    <span class="orbit-dot dot-two"></span>
+                    <span class="orbit-dot dot-three"></span>
+                </div>
+
+                <div class="about-content">
+                    <span class="eyebrow">DESIGNED WITH PURPOSE</span>
+                    <h2>Less noise. More meaningful progress.</h2>
+                    <p>
+                        Great digital products should feel clear from the first interaction.
+                        Nova focuses on useful information, predictable navigation, and responsive
+                        layouts that work comfortably across phones, tablets, and desktops.
+                    </p>
+
+                    <div class="about-points">
+                        <div><span>01</span><p>Simple structure that is easy to scan.</p></div>
+                        <div><span>02</span><p>Responsive components for every screen.</p></div>
+                        <div><span>03</span><p>Accessible interactions and semantic markup.</p></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== CTA ==================== -->
+        <section class="cta-section" id="contact">
+            <div class="container cta-box">
+                <div>
+                    <span class="eyebrow">READY WHEN YOU ARE</span>
+                    <h2>Build something people enjoy using.</h2>
+                    <p>Start with a clear idea and turn it into a polished experience.</p>
+                </div>
+                <a href="mailto:hello@example.com" class="button button-light">Let's Talk <span>→</span></a>
+            </div>
+        </section>
+    </main>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="site-footer">
+        <div class="container footer-top">
+            <div>
+                <a href="#home" class="logo footer-logo">
+                    <span class="logo-mark">N</span>
+                    <span>Nova</span>
+                </a>
+                <p>A creative landing page concept built with HTML, CSS and vanilla JavaScript.</p>
+            </div>
+
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#features">Features</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+
+        <div class="container footer-bottom">
+            <span>© <span id="current-year"></span> Nova. All rights reserved.</span>
+            <span>Responsive • Accessible • Vanilla JS</span>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
